@@ -8,8 +8,8 @@
     </head>
 
     <body>
-        @include('site.layouts._partials.topo')
+        @include('site.layout._partials.topo')
         @yield('conteudo')
-        @include('site.layouts._partials.rodape')
+        @include('site.layout._partials.rodape')
     </body>
 </html>
