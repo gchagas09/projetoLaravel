@@ -11,7 +11,8 @@
 
         <div class="informacao-pagina">
             <div class="contato-principal">
-                <form action={{ route ('site.contato') }} method='GET' >
+                <form action={{ route ('site.contato') }} method='post' >
+                    @csrf
                     <input name="nome" type="text" placeholder="Nome" class="borda-preta">
                     <br>
                     <input name="telefone" type="text" placeholder="Telefone" class="borda-preta">
@@ -25,7 +26,7 @@
                         <option value="3">Reclamação</option>
                     </select>
                     <br>
-                    <textarea name ="mensagem" class="borda-preta">Preencha aqui a sua mensagem</textarea>
+                    <textarea name ="mensagem" class="borda-preta" placeholder="Preencha aqui a sua mensagem"></textarea>
                     <br>
                     <button type="submit" class="borda-preta" value = "ENVIAR">ENVIAR</button>
                 </form>
